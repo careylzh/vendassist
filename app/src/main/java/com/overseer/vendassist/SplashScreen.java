@@ -11,9 +11,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.overseer.vendassist.Dashboard;
-import com.overseer.vendassist.SelectItems;
-import com.overseer.vendassist.R;
 import android.content.Intent;
 
 public class SplashScreen extends AppCompatActivity {
@@ -52,21 +49,20 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void run() {
                 //check if user is using app for first time
-                sharedPreferences = getSharedPreferences("onBoardingScreen", MODE_PRIVATE);
+                /*sharedPreferences = getSharedPreferences("onBoardingScreen", MODE_PRIVATE);
                 boolean firstTimeUsing = sharedPreferences.getBoolean("firstTime", true);
                 if (firstTimeUsing) {
-                    //TODO: what do the following 3 steps do respectively?
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putBoolean("firstTime", false);
                     editor.commit();
                     Intent intent = new Intent(getApplicationContext(), SelectItems.class);
                     startActivity(intent);
                     finish();
-                } else {
+                } else { */
                 Intent nextScreen = new Intent(getApplicationContext(), Dashboard.class); //(instance you're at, where you want to go) SplashScreen.this also can
                 startActivity(nextScreen);
                 finish(); //destroy activity and move to next activity, so that back button will not bring you to splash screen
-                }
+                //}
             }
         }, SPLASH_TIMER);
 

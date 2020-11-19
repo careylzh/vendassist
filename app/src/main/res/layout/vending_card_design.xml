@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:elevation="10dp"
+    android:layout_margin="10dp">
+    <!--to be changed dynamically in java class - image title and description of each card view. placed placeholder image/text here.-->
+    <!--TODO: the adapter modifies recycler view to set background of linear layout, remove anything related to imageView setting-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/recycler_card_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/splashscreen_background"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/recycler_card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="location/event/promotion1"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!--trending card description-->
+        <TextView
+            android:id="@+id/recycler_card_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut e "
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

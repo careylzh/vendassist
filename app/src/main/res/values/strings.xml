@@ -3,4 +3,5 @@
     <string name="logo_name">vendassist</string>
     <string name="slogan_name">Your preferred vending machine snack investigator.</string>
     <string name="powered_by">VendAssist, Powered by 50.001 Javaland</string>
+    <string name="title_activity_product_info">ProductInfoActivity</string>
 </resources>

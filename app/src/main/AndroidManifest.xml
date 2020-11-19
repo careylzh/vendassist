@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SelectItems"></activity>
+        <activity
+            android:name=".ProductInfoActivity"
+            android:label="@string/title_activity_product_info"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Dashboard" />
         <activity android:name=".SplashScreen">
             <intent-filter>
