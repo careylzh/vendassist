@@ -20,14 +20,79 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_product_info" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_product_info" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+
+    <Button
+        android:id="@+id/findButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_margin="16dp"
+        android:text="Find" />
+
+    <Button
+        android:id="@+id/trackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        android:text="Track" />
+    <TextView
+        android:id="@+id/availText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center"
+        app:layout_anchorGravity="bottom|center"
+        android:text="Availability: None"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="60dp"
+        />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="110dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center|top"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/splashscreen_background" />
+            <ImageView
+                android:id="@+id/infoView"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:padding="5dp"
+                android:layout_gravity="center|top"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/splashscreen_background" />
+
+            <!--
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />-->
+            <!--TODO: add respective images for pdt description-->
+        </LinearLayout>
+    </ScrollView>
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

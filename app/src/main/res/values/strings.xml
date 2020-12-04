@@ -4,4 +4,12 @@
     <string name="slogan_name">Your preferred vending machine snack investigator.</string>
     <string name="powered_by">VendAssist, Powered by 50.001 Javaland</string>
     <string name="title_activity_product_info">ProductInfoActivity</string>
+    <string name="favOn">UnTrack</string>
+    <string name="favOff">Track</string>
+    <string name="BLD1_POPUP">Building 1, Level 3</string>
+    <string name="BLD2_POPUP">Building 2, Level 5</string>
+    <string name="MPH_POPUP">Multi-Purpose Hall, Level 2</string>
+    <string name="SRC_POPUP">Sports and Recreation Centre, Level 1</string>
+    <string name="HOSTEL_POPUP">Hostel, Level 9</string>
+
 </resources>

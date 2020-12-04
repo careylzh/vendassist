@@ -24,13 +24,13 @@ public class SplashScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        /*setFlags
-        TODO: understand set flags
-        * to current window, set the intent as to display full screen
-        * */
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_splashscreen);
+
 
         //"hooks"
         backgroundImage = findViewById(R.id.background_image);
